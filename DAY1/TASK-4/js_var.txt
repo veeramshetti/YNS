@@ -1,0 +1,79 @@
+Variables and data types
+
+i) variables :
+var:
+    Declares variables with function or global scope and allows re-declaration and updates within the same scope.
+
+    -> The scope of the var variable is global.
+
+    example: var a=10;
+             console.log(a);
+
+let:
+    Declares variables with block scope, allowing updates but not re-declaration within the same block.
+
+    -> The scope of the let varaible is block level.
+
+    example: let x=20;
+             console.log(x);
+
+const:
+    Declares block-scoped variables that cannot be reassigned after their initial assignment.
+
+    -> The scope of the const variable is block level.
+  
+    we can't declare const without initialization.
+
+    example: const food="biryani";
+             console.log(food);
+
+ii) data types:
+primitive types:
+
+   Number:
+     In this data type it can stores both decimal and integers 
+     ex: let s=0.1;
+         let p=45;
+         console.log(s);
+         console.log(p);
+
+    String:
+     Represents a sequence of characters, enclosed in single (' '), double (" "), or backticks (` `). Strings are immutable and their value can't be changed after creation. 
+     ex: const food='biryani';
+         console.log(food)
+
+    Boolean:
+     Represents a logical entity and can only have two values true or false.
+      ex: let x=2;
+          let y=9;
+          console.log(x==y);
+
+    undefined:
+     Represents a variable that has been declared but not assigned a value.
+      ex:let f;
+         console.log(f);
+
+    null:
+     Represents the intentional absence of any object value. It's often used to explicitly state that a variable has no value.
+     ex: let p=null;
+         console.log(p);
+
+    BigInt:
+     A new type introduced to represent integers of arbitrary precision, useful for numbers larger than (2**53)- 1.
+     ex: let x=BigInt(46672671897373939847464893984764648949474646488);
+         console.log(x);
+
+    Symble:
+      A unique and immutable primitive value, often used as a key for an object property to avoid naming conflicts.
+
+non-primitive:
+ Object:
+  he most fundamental non-primitive type. It's a collection of key-value pairs, where keys are strings or Symbols and values can be any data type.
+  ->instance of classes
+
+ Array:
+  A special type of object used to store ordered collections of values. It's defined by square bracket[].
+
+ Function:
+  A callable object that executes a block of code. Functions are treated as first-class citizens in JavaScript, meaning they can be assigned to variables, passed as arguments, and returned from other functions.
+
