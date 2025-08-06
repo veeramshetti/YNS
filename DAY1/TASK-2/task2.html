@@ -3,32 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple layout of sidebar</title>
-    <link rel="stylesheet" href="task2.css">
-    
+    <title>simple layout</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+</head>
 <body>
-<div class="container">
-    <div class="sidebar-container font_for_sidebar_elements">    
-        <a href="#">Home</a><br>
-        <a href="#">About</a><br>
-        <a href="#">Contact</a><br>
-        <a href="#">Services</a><br>
-        <a href="#">Settings</a><br>
-        <a href="#">Logout</a><br>  
-        <a href="#">Help</a><br>
-        <a href="#">FAQ</a><br> 
-        <a href="#">Profile</a><br>   
-        <a href="#">Notification</a><br>
-    </div>
-    <div class="content-container">
+    <div class="container">
+        <div class="left-column clearfix">
+
+         <div class="together">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search..."><br>
+         </div>
+         <div>
+           <i class="fa-solid fa-house"></i>
+           <a href="#">Home</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-comment"></i>
+            <a href="#">About</a><br>
+         </div>
+         <div>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">Contact</a><br>
+         </div>
+         <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <a href="#">Services</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-cog"></i>
+            <a href="#">Settings</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-sign-out-alt"></i>
+            <a href="#">Logout</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-info-circle"></i>
+            <a href="#">Help</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-question-circle"></i>
+            <a href="#">FAQ</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-user"></i>
+            <a href="#">Profile</a><br>
+         </div>
+         <div>
+            <i class="fa-solid fa-bell"></i>
+            <a href="#">Notification</a><br>
+         </div>
+
+        </div>
+        <div class="right-column">
             <div>
                 <h1>Welcome to the Simple Layout</h1>
                 <p>This is a basic layout with a sidebar and content area.</p>
                 <p>You can add more content here as needed.</p>
             </div>
-    </div>
-
-</div>
-
+        </div>
 </body>
 </html>
