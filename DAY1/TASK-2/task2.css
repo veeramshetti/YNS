@@ -19,10 +19,11 @@ a{
 }
 .left-column {
     float: left;
-    width: 48%;
+    width: 24%;
     margin-right: 2%;
 }
 .right-column {
     float: left;
     width: 48%;
 } 
+
