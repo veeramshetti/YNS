@@ -1,19 +1,12 @@
-const personPrototype = {
-  introduce: function() {
-    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+  isStudent: false,
+  greet: function() {
+    console.log(`Hello, my name is ${this.firstName}.`);
   }
 };
 
-function createPersonWithPrototype(name, age) {
-  const person = Object.create(personPrototype);
-  person.name = name;
-  person.age = age;
-  return person;
-}
-
-
-const person3 = createPersonWithPrototype("Charlie", 40);
-const person4 = createPersonWithPrototype("David", 35);
-
-person3.introduce(); 
-person4.introduce();
+console.log(person.firstName); 
+person.greet(); 
